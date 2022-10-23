@@ -9,16 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "classnames": "^2.3.2",
+    "css-loader": "^6.7.1",
+    "dayjs": "^1.11.5",
+    "js-cookie": "^3.0.1",
     "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-seomatic": "^1.0.4",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.5.0",
     "@types/node": "18.11.0",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
+    "autoprefixer": "^10.4.12",
+    "babel-loader": "^8.2.2",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
+    "next-sitemap": "^1.6.203",
+    "postcss": "^8.4.18",
+    "style-loader": "^2.0.0",
+    "tailwindcss": "^3.2.1",
     "typescript": "4.8.4"
   }
 }

@@ -1,8 +1,23 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import React from 'react';
+import App, { AppContext } from 'next/app';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+import '../styles/app.scss';
+
+class MyApp extends App {
+    static async getInitialProps(appContext: AppContext) {
+        // calls page's `getInitialProps` and fills `appProps.pageProps`
+        const appProps = await App.getInitialProps(appContext);
+
+        return {...appProps};
+    }
+
+    render() {
+        const {Component, pageProps} = this.props;
+
+        return (
+            <Component { ...pageProps } />
+        );
+    }
 }
 
-export default MyApp
+export default MyApp;
